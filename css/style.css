@@ -628,6 +628,55 @@ header.header-static {
   color: rgba(255, 255, 255, 1.0);
 }
 
+.widgets {
+  position: fixed;
+  bottom: 68px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 99999;
+}
+
+.widgets a {
+  font-size: 22px;
+  padding: 10px 13px;
+  border-radius: 100vh;
+  color: white;
+  background-color: #5DD3B6;
+
+  &:hover {
+    color: white !important;
+  }
+}
+
+.widgets a i {
+  animation: shake 1s infinite;
+  animation-delay: 3s;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 
 #subheader.text-light .crumb {
   color: #fff;
